@@ -179,26 +179,26 @@ fun MyTopAppBar10( navController:NavController, scaffoldState: ScaffoldState, sc
         actions = {
 
             //Notification Icon
-            IconButton(onClick = {
-                navController.navigate(Routes.status.route)
-            }) {
-                Icon(
-                    imageVector = Icons.Filled.Details,
-                    contentDescription = "Open details",
-                    tint = Color.White
-                )
-            }
-
-            // 3 vertical dots icon
 //            IconButton(onClick = {
-//                expanded = true
+//                navController.navigate(Routes.status.route)
 //            }) {
 //                Icon(
-//                    imageVector = Icons.Default.MoreVert,
-//                    contentDescription = "Open Options",
+//                    imageVector = Icons.Filled.Details,
+//                    contentDescription = "Open details",
 //                    tint = Color.White
 //                )
 //            }
+
+            // 3 vertical dots icon
+            IconButton(onClick = {
+                expanded = true
+            }) {
+                Icon(
+                    imageVector = Icons.Default.MoreVert,
+                    contentDescription = "Open Options",
+                    tint = Color.White
+                )
+            }
 
             // drop down menu
             DropdownMenu(
